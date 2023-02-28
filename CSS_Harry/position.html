@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>position</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        body
+        {
+            background-color:darkgray;
+        }
+
+        header {
+            color: chartreuse;
+            background-color: black;
+            height: 10vh;
+            position: sticky; /*header will move from their position*/
+            top: 0px;
+            z-index: 10px; /*header will be on the top of other block. other blocks will move under the header*/
+        }
+
+        li {
+            display: inline-block;
+            margin: 30px 10px;
+            padding: 5px;
+        }
+
+        .box1 {
+            width: 50vw;
+            height: 150vh;
+            background-color: aqua;
+            margin: auto;
+            /*move block to the center.*/
+        }
+
+        p {
+            text-align: center;
+            border: 2px solid red;
+        }
+
+        .box2 {
+            background-color: blue;
+            width: 20vw;
+            height: 20vh;
+            border: dotted 2px rgb(207, 10, 119);
+            margin: 2px 0px 0px 0px;
+            border-radius: 20px;
+            padding: 5px;
+            /* position: fixed; in case of fixed position box will fix and top, bottem, left, right attributs will not work */
+            position: relative;
+            /*in case of relative position box's position will change and top, bottem, left, right attributs will work.if i wanna change the position of box2, the adjecent box will remain on same position*/
+            top: 30px;
+            left: 0px; 
+        }
+
+        .box3 {
+            background-color: rgb(107, 26, 89);
+            width: 15vw;
+            height: 10vh;
+            border: dotted 2px rgb(236, 40, 5);
+            margin: 2px 0px 0px 0px;
+            border-radius: 20px;
+            padding: 5px;
+            position: fixed; /*in case of fixed position box will change according to web page diemension*/
+            bottom: 50px;
+            right: 0px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <ul> <!--we can use list style property for bullets here.-->
+            <li>home</li>
+            <li>about</li>
+            <li>help</li>
+        </ul>
+    </header>
+    <div class="box1">
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati corporis repellendus fugiat nulla
+            molestiae veritatis ipsa eum quia eos iure magnam ea amet, nemo dignissimos ducimus. Dolorum reprehenderit
+            totam aut.
+        </p>
+        <div class="box2">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dignissimos nemo, doloribus in non odio mollitia!
+            Illo omnis officiis possimus
+        </div>
+        <div class="box3">
+            <form >
+                <label for="20" style="color: rgb(248, 248, 248);">Please! Share your experience</label>
+                <input type="text" name="comment" id="20" placeholder="write your comment...">
+                <input type="submit" name="submit">
+            </form>
+        </div>
+    </div>
+
+
+</body>
+
+</html>

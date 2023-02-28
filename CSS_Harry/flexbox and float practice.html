@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>layout</title>
+
+    <style>
+        *
+        {
+            margin: 0;
+            padding: 0;
+        }
+        header
+        {
+            height: 60px;
+            background-color: black;
+            color: white;
+            text-align: right;
+        }
+        li{
+            display: inline-block;
+            margin: 20px;
+        }
+        .box1
+        {
+            height: 80vh;
+            width: 40vw;
+            background-color: aqua;
+            float: right;
+        }
+        .box2
+        {
+            height: 80vh;
+            width: 40vw;
+            background-color: rgb(38, 15, 168);
+        }
+        .container      /*same layout by using flexbox*/
+        {
+            display:flexbox;
+            flex-direction: row-reverse; /*default is also row direction but not reverse*/
+            margin: 5px 0px 0px 0px;
+            /* justify-content: center;    in case of display: flex;  it work not in case of display:flexbox;*/ 
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li>Home</li>
+                <li>About</li>
+                <li>Contact</li>
+                <li><a href="https://www.uetpeshawar.edu.pk">log in</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="box1">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, rem alias dolorum suscipit nam possimus magnam labore tempore, officiis nostrum magni beatae ratione totam culpa dolorem praesentium eligendi facere consequuntur! Deserunt tenetur, consectetur accusantium rem distinctio dolore quo dignissimos soluta officia, incidunt quos nemo aliquam accusamus molestiae laboriosam eaque autem. Officiis nihil voluptatibus mollitia, animi excepturi dolores iste accusantium reiciendis minima sunt molestias corrupti qui itaque magni. Aspernatur voluptates ad ut blanditiis officia autem eveniet ullam error explicabo vitae mollitia modi non, atque quaerat aperiam. Aliquam expedita iste asperiores. Laudantium eaque corporis doloribus quos optio quas aperiam? Cumque, saepe error?
+    </div>
+    <div class="box2">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quaerat, explicabo maiores? Assumenda vel repellendus est, architecto mollitia natus deserunt! Quo non quasi alias maxime nobis veritatis aperiam, eaque itaque ipsam sunt, blanditiis consectetur quae quidem odio repellat earum laborum expedita possimus recusandae et exercitationem assumenda ea. Laboriosam necessitatibus veritatis vitae accusamus ea distinctio voluptatibus, mollitia, tempore eum neque minus officia rem ipsam minima? Rem quasi saepe quidem voluptatibus vero voluptates, aspernatur ad minus explicabo facilis, eveniet placeat. Illum nesciunt quod quasi mollitia explicabo. Quia aliquid ea iusto voluptatum fugit, quisquam placeat ratione fuga optio enim dicta veniam ipsam, necessitatibus unde.
+
+    </div>
+    <div class="container">
+        <div class="box1">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, rem alias dolorum suscipit nam possimus magnam labore tempore, officiis nostrum magni beatae ratione totam culpa dolorem praesentium eligendi facere consequuntur! Deserunt tenetur, consectetur accusantium rem distinctio dolore quo dignissimos soluta officia, incidunt quos nemo aliquam accusamus molestiae laboriosam eaque autem. Officiis nihil voluptatibus mollitia, animi excepturi dolores iste accusantium reiciendis minima sunt molestias corrupti qui itaque magni. Aspernatur voluptates ad ut blanditiis officia autem eveniet ullam error explicabo vitae mollitia modi non, atque quaerat aperiam. Aliquam expedita iste asperiores. Laudantium eaque corporis doloribus quos optio quas aperiam? Cumque, saepe error?
+        </div>
+        <div class="box2">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quaerat, explicabo maiores? Assumenda vel repellendus est, architecto mollitia natus deserunt! Quo non quasi alias maxime nobis veritatis aperiam, eaque itaque ipsam sunt, blanditiis consectetur quae quidem odio repellat earum laborum expedita possimus recusandae et exercitationem assumenda ea. Laboriosam necessitatibus veritatis vitae accusamus ea distinctio voluptatibus, mollitia, tempore eum neque minus officia rem ipsam minima? Rem quasi saepe quidem voluptatibus vero voluptates, aspernatur ad minus explicabo facilis, eveniet placeat. Illum nesciunt quod quasi mollitia explicabo. Quia aliquid ea iusto voluptatum fugit, quisquam placeat ratione fuga optio enim dicta veniam ipsam, necessitatibus unde.
+    
+        </div>
+    </div>
+    
+</body>
+</html>

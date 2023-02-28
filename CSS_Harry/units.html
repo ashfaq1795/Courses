@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Units</title>
+
+    <style>
+        .container
+        {
+            font-size: 30px;
+        }
+        .box1
+        {
+            background-color: burlywood;
+            /*font-size: 2em;*/    /*2em means 2 time of parent so parent=24px & 2em=48px.*/
+            
+            font-size: 3rem;   /*rem mean relative to html default size. in this case html defualt size becomes twice*/
+            
+        }
+        .box2
+        {
+            background-color: aqua;
+            width: 50vh;  /*it will measure width of web page and then give half of its width to the width of this box2*/
+            height: 50vh;  /*it will measure width of web page and then give half of its width to the height of this box2.
+            same case is in vh unit.*/
+
+        }
+        .box3
+        {
+         background-color: chocolate;
+         width: 400vw;
+         height: 300vw;
+         max-width: 50vw; /*this box3 width size can't be increased than 50vw*/
+         max-height: 40vw; /*this box3 height size can't be increased than 40vw*/
+
+        }
+
+
+    </style>
+</head>
+<body>
+    <p class="container">
+        This is container
+        <div class="box1">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus dolorem saepe, veritatis ex dolore odio vitae. Voluptas, nostrum mollitia? Commodi neque quis assumenda fugit quidem exercitationem sapiente libero voluptatibus modi.
+        </div>
+    </p>
+    <div class="box2">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, et! Nobis, dignissimos.
+    </div>
+    <div class="box3">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatum ipsa libero itaque iusto, accusamus suscipit labore assumenda laborum, ullam quibusdam maiores deserunt quo asperiores consequatur ad, minima magni ducimus ipsam?
+    </div>
+    
+</body>
+</html>

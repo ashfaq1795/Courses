@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>    
+    <!--in this totorial we will discuss about background-repeat, background-size and background-position-->
+    <!--this file also showes the difference between background size "cover" and "contain"-->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>background 1</title>
+    <style>
+        .container
+        {
+            width: 300px; 
+            height: 200px;
+            /*above dimension is the dimension of box which will contain all content of the tag in which tag this class called.*/
+            border: 2px solid rgb(138, 7, 7);
+            color: rgb(236, 13, 181);
+            background-image: url('https://english.cdn.zeenews.com/sites/default/files/styles/zm_700x400/public/2022/02/13/1014236-adadad.jpg');
+            background-repeat: no-repeat; 
+            background-size:cover;  /*we can also give size like 40px 60px.
+            if height and width is greater than background size like 40px 60px in this case we can use background property*/
+            
+
+            /* in case of cover pic will cover the box represented by dimension in case of contain it will not cover.*/
+        
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum optio eos sequi est nihil fuga quasi sit atque ducimus sapiente illum velit quae ab, veritatis iure dolorem odio adipisci et?
+    </div>
+</body>
+</html>

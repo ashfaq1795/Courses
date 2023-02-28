@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flexbox</title>
+
+    <style>
+        .containor{
+             display:flex;   /*flexbox property always apply on container inside which many boxes present*/
+             flex-direction:row-reverse;
+             justify-content:flex-end;  /*this move container horizontally*/
+             height: 50vh;
+             background-color: coral;
+             align-items:center; /*this move container vertically*/
+        }
+        .box1
+        {
+            height: 200px;
+            width: 200px;
+            flex-wrap: wrap;
+            background-color: blue;
+            border: 2px solid red;
+            align-self: flex-end;
+        }
+        .box2
+        {
+            height: 200px;
+            width: 200px;
+            background-color: rgb(9, 243, 204);
+            border: 2px solid red;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="containor">
+    <div class="box1">
+        box1
+    </div>
+    <div class="box2">
+        box2
+    </div>  
+    <div class="box2">
+        box3
+    </div>
+    <div class="box2">
+        box4
+    </div>
+    <div class="box2">
+        box5
+    </div>
+</div>
+</body>
+</html>

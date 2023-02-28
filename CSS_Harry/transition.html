@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!--Transition is related to Image. to make image dynamic if we move cursor to that image. motion of image depend upon our specification-->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transition</title>
+
+    <style>
+        .container {
+            background-color: coral;
+            height: 500px;
+        }
+
+        .box {
+            border: 2px solid black;
+            display: inline-block;
+        }
+
+        img {
+            width: 400px;
+            height: 300px;
+            /*transition-property:width ;
+            transition-duration: 0.5s;
+            transition-timing-function: ease-in;
+            transition-delay: 2s; */
+            transition: width 0.5s ease-in-out, height 2s ease-in;
+        }
+
+        img:hover {
+            width: 100px;
+            height: 150px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box">
+            <img
+                src="https://media.istockphoto.com/photos/bee-and-flower-close-up-of-a-large-bee-collecting-pollen-on-purple-picture-id1369574189?b=1&k=20&m=1369574189&s=170667a&w=0&h=hOMLCE-RePzMnddQXxyVBYSSIl4-xSbAgGEQ2RTlAYQ=">
+        </div>
+    </div>
+</body>
+
+</html>

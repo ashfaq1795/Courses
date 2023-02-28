@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grid</title>
+
+    <style>
+        .container   /*we can't use container properties inside item.*/
+        {
+            height: 50vh; 
+            background-color: yellow;
+            display: grid;
+            grid-row-gap: 3px;  /*gap between two rows*/
+            grid-column-gap: 5px;   /*gap between two columns*/
+            /* grid-gap: 3px 5px;   combination of above two properties*/ 
+            /* grid-template-columns: 10vw 20vw 25vw; specifies no of columns and width of the columns. */
+            /* grid-template-rows: 20vh 30vh; specifies no of rows and height of the rows. */
+            grid-template-columns: auto auto auto auto ;
+            /* justify-content: left; */
+            grid-column : 2 /6;
+        }
+        .item  /*we can't use item properties inside container.*/
+        {
+            background-color: aqua;
+            border: 2px solid red;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+        <div class="item">6</div>
+        <div class="item">7</div>
+        <div class="item">8</div>
+        <div class="item">9</div>
+    </div>
+    
+</body>
+</html>

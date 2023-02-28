@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css selector</title>
+    <style>
+     h1, p  /*element selector. 
+     it means whenever we put h1 tag it will follow the specification defined in h1
+     we can also select multiple elements*/  
+     {
+       color:aqua;
+       background-color: blueviolet;
+     }
+     #xyz /*attribute selector.
+      it means whenever we put xyz attribute it will follow the specification defined in h1*/
+     {
+        color:white;
+        background-color:rgb(177, 111, 31);
+     }
+     .myclass,.class2 /*class selector. 
+     it means whenever we put  "myclass" it will follow the specification defined in h1. we can also select multiple classes*/
+     {
+        color: blue;
+        background-color: chartreuse;
+        border: 2px solid black;
+     }
+     *   /*universial selector.   
+     select all elements in the file.*/
+     {
+      margin: 0;
+      padding: 0;
+     }
+    </style>
+</head>
+<body>
+   <h1>This is element selector</h1>  
+   <div id="xyz">                     
+    this is attribute selector 
+   </div>
+   <span class="myclass">Home</span> 
+   <span class="myclass">About</span>
+   <span class="myclass">Help</span>
+   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem quod beatae cum, provident qui temporibus omnis neque accusantium soluta, perspiciatis doloribus culpa totam quibusdam repudiandae labore ipsa nemo tempora nobis.</p>
+   <div class="class2"> This is just like myclass. both myclass and class2 have same attributes</div>
+</body>
+</html>

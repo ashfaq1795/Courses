@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>text display properties properties</title>
+    <style>
+        *
+        {
+            margin: 0;
+            padding: 0;
+        }
+        .box1
+        {
+            height: 80px;
+            color: aliceblue;
+            background-color: black;
+        }
+        .box2
+        {
+            height: 900px;
+            width: 50%;
+            background-color: green;
+            display: inline-block;
+            line-height: 45px; 
+            
+            
+        }
+        .box3
+        {
+            height: 900px;
+            width: 50%;
+            background-color: red;
+            line-height: 45px;
+            display: inline-block; 
+        }
+        footer
+        {
+            color: black;
+            background-color: chocolate;
+            font-style: italic;
+        }
+        .align
+        {
+             text-align: center; 
+             margin: 20px;
+             padding: 10px; 
+        }
+        li a  /*this efffect will applied on content inside "li" and then inside "a" 
+        if we remove li then this effect will applied everywhere where a is and here is applied only when a is inside li*/
+        {
+            color: rgb(218, 22, 159);   /* changing color of link*/
+            text-decoration: none;  /*this is for removing underline from links*/
+        }
+        li 
+        {
+            display: inline-block; /*for displaying home about help in horizontal form. it doesn't work in a tag*/
+            margin: 30px 0px;
+            padding: 15px 15px;
+        }
+    </style>
+</head>
+<body>
+
+   <div class="box1">
+    <ul>
+        <li><a href="#">Home</a> </li>
+        <li><a href="#">About</a></li>
+        <li><a href="#"> Help</a></li>
+    </u>
+   </div>
+
+   <div class="box2">
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas commodi, nemo voluptatem, dolor accusamus deleniti natus labore adipisci vitae molestias expedita inventore voluptatum enim. Et inventore quae adipisci optio sed quo earum dicta, dignissimos hic ut molestias illo ducimus, similique, molestiae pariatur illum maxime blanditiis? Ex tenetur explicabo reprehenderit modi!
+   </div><div class="box3"> <!--we can't give space b/c the box2 and box3 will not be inline -->
+    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Esse laudantium dolores ex laboriosam ipsum deleniti exercitationem aut quidem ipsam sed inventore, quibusdam dignissimos quia voluptatum perspiciatis! Ea laborum numquam, omnis rerum consequuntur et! Quae optio non nisi quisquam. Assumenda aut deleniti vero dolore non necessitatibus repudiandae ut vitae eos minus.
+   </div>
+   <footer>
+    <div class="align">
+     <b>Contact me via mail if you have any querry: <a href="#"> 19pwcse1795@uetpeshawar.edu.pk</a></b>
+    </div>
+   </footer>
+    
+</body>
+</html>

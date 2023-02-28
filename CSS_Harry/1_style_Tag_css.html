@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>style tage css</title>
+
+    <!--(1) adding css using style tag -->
+    <style>
+      #first
+      {
+        color: blueviolet;
+        background-color: gold;
+      }
+      .ashfaq
+      {
+       color: brown;
+       background-color: chartreuse;
+      }
+      .abc 
+      /* A class defined at the end will have higher priority. so "abc" class has higher priority than "ashfaq" even if we call it at the end.*/ 
+      {
+        color: rgb(17, 226, 17);
+        background-color: chocolate;
+
+      }
+
+    </style>
+</head>
+<body>
+   <div id="first">  <!--same attribute can't be called in more than one element id has one-to-one relationship-->
+      this is attribute. To access attribute in style tag we use "#" operator.
+   </div> 
+   <div class="abc ashfaq ">  <!--same class can be applied to more than one element. also more 
+    than one class can be applied to same elelment. class has many-to-many Relationship -->
+    this is class. To access class in style tag we use "." operator.
+   </div>
+</body>
+</html>
